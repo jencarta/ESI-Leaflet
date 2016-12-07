@@ -4,7 +4,6 @@
   <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.css"/>
   <script src="http://cdn.leafletjs.com/leaflet-0.7.3/leaflet.js"></script>
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-  <script src='https://api.mapbox.com/mapbox.js/plugins/leaflet-label/v0.2.1/leaflet.label.js'></script>
   <link rel="stylesheet" href="master.css"/>
 </head>
 <body>
@@ -15,11 +14,7 @@ var map = L.map('map').setView([31.78, -81], 12);
 
 // load a tile layer
 
-//L.tileLayer('https://stamen-tiles-{s}.a.ssl.fastly.net/toner-lite/{z}/{x}/{y}.png').addTo(map);
-var wcolor = L.tileLayer('http://tile.stamen.com/watercolor/{z}/{x}/{y}.jpg', {
-  attribution: 'Map tiles by Stamen Design, under CC BY 3.0. Data by OpenStreetMap, under CC BY SA.',
-  opacity: 0.4
-});
+
 var osm = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
    attribution: 'Map data OpenStreetMap',
     opacity: 1
