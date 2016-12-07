@@ -1,0 +1,9 @@
+#map {
+	height: 70%;
+}
+
+#data-div {
+	padding-top: 1%;
+    height: 29%;
+	overflow-y: scroll;
+}
